@@ -1,0 +1,927 @@
+/*
+Theme Name: alhanaee
+Theme URI:
+Author: Progos tech
+Author URI:http://www.progostech.com/
+Description: Custom wordpress theme for al hanaee */
+
+/* Import the necessary TK Bootstrap WP CSS additions */
+@import url( includes/css/bootstrap-wp.css);
+/*@import url( includes/css/helvetica-font.css );
+@import url( includes/css/helvetica-neue.css );*/
+/* My Minimal WordPress Styling comes here */
+
+body {
+	word-wrap: break-word;/*background: #eeedee;*/
+}
+.clear {
+	clear: both;
+}
+a {
+	color: #0a4c65;
+}
+/*******************************************************CUSTOM CSS************************************************/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Monda', sans-serif;
+}
+body {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+.main-content {
+	padding-bottom: 40px;
+}
+.navbar-header {
+	float: none;
+}
+.navbar-brand {
+	display: none;
+}
+.loader-img {
+	padding: 140px 0;
+}
+.site-branding {
+	width: 200px;
+	float: left;
+}
+.site-branding img {
+	width: 100%;
+}
+.site-branding h1 {
+	margin: 0;
+	padding: 0;
+}
+.navbar-default {
+	background: none;
+	margin-top: 80px;
+	margin-bottom: 0;
+	border: none;
+	min-height: 40px;
+}
+.navbar-nav {
+	float: right;
+}
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Monda', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 10px 14px;
+}
+.navbar-default .navbar-nav>li:last-child>a {
+	padding-right: 0px;
+}
+.navbar-default .navbar-nav>li>a, .home-title {
+	color: #656565
+}
+.sub-menu-page {
+	margin-bottom: 20px;
+}
+.sub-menu-page ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.sub-menu-page li {
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+	float: left;
+	width: 33%
+}
+.sub-menu-page li:last-child {
+	width: 34%;
+}
+
+.sub-menu-page.practice li {
+	width: 20%;
+}
+.sub-menu-page.practice li a {
+	font-size: 11px;
+}
+.sub-menu-page li.current-menu-item a, .sub-menu-page li a:hover {
+	background: #084b65;
+	color: #FFF;
+}
+.sub-menu-page li a {
+	font-family: 'Monda', sans-serif;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0;
+	text-align: center;
+	/*font-style: italic;*/
+	color: #656565;
+	font-size: 16px;
+	background: #eeedee;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+	color: #0a4c65;
+}
+.post-img {
+	display: block;
+	width: 100%;
+}
+.post-img img {
+	width: 100%;
+	height: auto;
+}
+.post-title {
+	font-family: 'Monda', sans-serif;
+	font-weight: normal;
+	color: #084b65;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin: 15px 0 15px;
+	text-align: center;
+	line-height: 36px;
+}
+.home-title {
+	font-size: 20px;
+	text-align: center;
+	padding: 25px 10% 35px;
+	line-height: 34px;
+}
+.odd-post {
+	padding: 20px 0 20px 20px;
+}
+.even-post {
+	padding: 20px 20px 20px 0;
+}
+.practice-page .even-post {
+	padding: 20px 0 20px 20px;
+}
+.practice-page .odd-post {
+	padding: 20px 20px 20px 0;
+}
+.main-content-inner article:nth-child(odd) {
+	border-top: solid 1px #adadad;
+	border-right: solid 1px #adadad;
+	border-left: 0;
+	border-bottom: 0
+}
+.main-content-inner #post-268 {
+	border-bottom: solid 1px #adadad !important;
+}
+.testimonial-posts {
+	border-top: solid 1px #adadad;
+}
+.main-content-inner article:nth-child(even) {
+	border-left: solid 1px #adadad;
+	border-top: solid 1px #adadad;
+	border-right: 0;
+}
+.practice-posts article:nth-child(odd) {
+}
+.practice-posts article:nth-child(even) {
+}
+.main-content-inner article:last-child {
+	border-bottom: solid 1px #adadad;
+}
+.entry-content p, .entry-content ul {
+	font-size: 15px;
+	color: #939598;
+	line-height: 24px;
+}
+.entry-content ul {
+	margin: 0;
+	padding: 5px 15px;
+}
+.entry-content ul li {
+	margin: 2px 0;
+}
+.entry-content h4 li {
+	text-align: center;
+	font-size: 16px;
+	color: #656565;
+	margin-bottom: 32px;
+	list-style: none;
+}
+/*.home h4 { display:none;}*/
+.entry-content h4 ul {
+	margin: 0;
+	padding: 0;
+}
+.entry-content h4 span {
+	display: none;
+}
+.two-column p {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40px;
+	column-gap: 40px;
+}
+.read-more {
+	text-decoration: underline;
+	color: #6593a0;
+	font-size: 14px;
+	margin-top: 25px;
+	display: block;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	max-height: 480px;
+}
+.banner img {
+	width: 100%;
+	height: auto;
+}
+.banner-caption {
+	font-family: 'Monda', sans-serif;
+	font-weight: normal;
+	top: 40px;
+	right: 40px;
+	font-size: 24px;
+	color: #FFF;
+	left: auto;
+	bottom: auto;
+	width: 32%;
+	text-align: center;
+	position: absolute;
+	/*text-shadow: 1px 1px 5px #000;*/
+}
+.about .banner-caption, .article .banner-caption {
+	left: 30px;
+	text-align: left;
+	/*color: #656565;*/
+	width: 42%;
+	right: auto;
+}
+body.ar .article .banner-caption {
+	top: 14px;
+}
+.practice .banner-caption {
+	/*color: #656565;*/
+}
+.team .banner-caption {
+	text-align: left;
+}
+body.ar .team .banner-caption {
+	text-align: right;
+	;
+}
+.article .banner-caption {
+	width: 25%;
+}
+.about-page article {
+	padding: 20px 0;
+}
+.first-post-title {
+	font-family: 'Monda', sans-serif;
+	text-align: center;
+	background: url(images/arrow.png) no-repeat center bottom;
+	font-size: 38px;
+	color: #656565;
+	padding: 30px 9% 62px;
+	line-height: 54px;
+	margin: 40px 0 55px;
+}
+.about-page article:last-child .post-title {
+	padding-top: 18%;
+}
+.team-meta {
+	text-align: center;
+}
+.team-meta span {
+	display: none;
+}
+.team-meta li {
+	list-style: none;
+}
+.team-meta em {
+	font-style: normal;
+	font-family: 'Monda', sans-serif;
+}
+.team-meta em li {
+	margin: 6px 0 !important;
+}
+.team-meta em li:first-child, .team-meta em li:last-child {
+	color: #939598;
+	font-size: 17px;
+}
+.team-meta em li:last-child, .team-meta h2 {
+	color: #084b65;
+}
+.team-meta h2 {
+	font-size: 30px;
+	margin: 35px 0 0;
+	display: block;
+	font-family: 'Monda', sans-serif;
+}
+#litigation-page .first-post-title, .team-page .first-post-title, .practice-page .first-post-title {
+	width: 244px;
+	padding: 0;
+	margin: 50px auto;
+	background-position: right center;
+	text-align: left;
+}
+#litigation-page .first-post-title {
+	width: 320px;
+	text-align: left;
+}
+.article-page .first-post-title {
+	padding: 30px 12% 60px;
+	line-height: 46px;
+}
+.first-post-title span {
+	display: block;
+}
+.first-post-title span:last-child {
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.practice-page article.category-litigation {
+	border-bottom: solid 1px #adadad;
+}
+.testimonial-posts {
+	padding: 20px 0 0;
+	font-size: 14px;
+	color: #939598;
+	line-height: 24px;
+}
+.testimonial-posts li {
+	color: #084b65;
+	text-align: right;
+	margin: 2px 0;
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+.testimonial-posts li span {
+	display: none;
+}
+.map {
+	height: 390px;
+	width: 100%;
+}
+#gmap_canvas {
+	height: 100%;
+	width: 100%;
+}
+.career-form .page-title-small, .page-subtitletitle {
+	text-align: center;
+}
+.page-title-small {
+	color: #084b65;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.page-subtitletitle {
+	font-size: 16px !important;
+	color: #939598;
+	display: block;
+	margin: 15px 0;
+}
+.career-page h2 {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	color: #939598;
+}
+.career-page article {
+	padding: 25px;
+}
+.career-form form div .form-control {
+	margin-bottom: 15px;
+}
+form .form-control {
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	border: solid 1px #eeedee;
+}
+.career-form div.wpcf7-validation-errors {
+	clear: left;
+	background: #edc5c5;
+	border: none;
+	color: #c66a6a;
+	text-align: center;
+	font-size: 12px;
+}
+.career-form div.wpcf7-mail-sent-ok {
+	clear: left;
+	background: #ceedc5;
+	border: none;
+	color: #89cd75;
+	text-align: center;
+	font-size: 12px;
+}
+form input[type="submit"] {
+	background: #064b65;
+	color: #FFF;
+	padding: 4px 12px;
+	float: right;
+	border: none;
+	margin-bottom: 10px;
+}
+.practice-posts .first-post-title {
+	width: 400px;
+}
+.useful-links {
+	margin-top: 20px;
+}
+.useful-links h4, .useful-links a {
+	color: #939598;
+	font-size: 12px;
+}
+.useful-links a {
+	color: #0a4c65;
+}
+.error-heading {
+	font-size: 150px;
+	font-weight: bold;
+	margin: 20px 0;
+	color: #dcddde;
+}
+.lang-switch {
+	margin-right: 15px;
+}
+.lang-switch #lang_sel_list {
+	z-index: 0 !important;
+}
+.lang-switch li.icl-ar {
+	min-width: 32px;
+}
+.lang-switch li a {
+	font-size: 12px !important;
+	display: block !important;
+	padding: 3px !important;
+	background: none !important;
+}
+.lang-switch li a img {
+	display: inline-block;
+	top: -1px !important;
+}
+.lang-switch ul {
+	float: right !important;
+}
+/*=============================Footer CSS================================*/
+.site-footer {
+	background: #FFF;
+	padding: 35px 0 5px;
+	color: #939598;
+	font-family: 'Monda', sans-serif;
+}
+.site-info {
+	text-align: center;
+}
+.site-footer ul {
+	padding: 0;
+	margin: 0 auto !important;
+	width: 62%;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+}
+body.en .site-footer ul {
+	width: 75%;
+}
+.site-footer ul li {
+	display: inline-block;
+	float: left;
+}
+.site-footer ul li a {
+	display: block;
+	padding: 5px 12px;
+	font-size: 13px;
+	color: #939598;
+	text-decoration: none;
+}
+.site-footer .site-info {
+	font-size: 12px;
+	border-top: solid 1px #dcddde;
+	padding: 15px 0;
+	margin-top: 15px;
+	display: block;
+}
+.first-post-title {
+	line-height: 52px;
+}
+body.page-template .post-title {
+	margin-bottom: 15px;
+}
+.scrollToTop {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	display: none;
+	background: url(images/top-icon.png) no-repeat left top;
+	text-indent: -9999px;
+	z-index: 500;
+	cursor: pointer;
+}
+.loading-logo { background:url(images/logo.png) no-repeat left top; width:259px; height:144px; margin: 30% 46%;}
+header { position:relative; z-index:10; background:#FFF;}
+/*============================================ARABIC LANGUAGE Style===================================================*/
+
+@font-face {
+	font-family: 'ge_dinar_tworegular';
+	src: url('fonts/ge_dinar_two_medium-webfont.eot');
+	src: url('fonts/ge_dinar_two_medium-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/ge_dinar_two_medium-webfont.html') format('woff2'), url('fonts/ge_dinar_two_medium-webfont.woff') format('woff'), url('fonts/ge_dinar_two_medium-webfont.ttf') format('truetype'), url('fonts/ge_dinar_two_medium-webfont.svg#ge_dinar_tworegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body.ar .site-header-inner {
+	float: right;
+}
+body.ar .read-more, body.ar .testimonial-posts, body.ar #post-266 h4 {
+	display: none;
+}
+body.ar {
+	font-family: 'ge_dinar_tworegular';
+}
+body.ar .navbar-nav {
+	float: left;
+}
+body.ar ul {
+	margin: 0;
+	padding: 0;
+}
+body.ar article ul {
+	padding-right: 20px
+}
+body.ar .navbar-default .navbar-nav>li>a {
+	width: 120px;
+	padding: 10px;
+	font-size:18px;
+}
+body.ar .lang-switch {
+	margin-left: 15px;
+}
+body.ar .lang-switch ul {
+	float: left !important;
+}
+body.ar .navbar-default .navbar-nav>li:first-child>a {
+	width: 94px;
+	padding-left: 0;
+}
+body.ar .site-branding {
+	float: none;
+}
+body.ar .first-post-title, body.ar #litigation-page .first-post-title {
+	width: 415px;
+	text-align: right;
+	background-position: left center;
+}
+body.ar .sub-menu-page li a {
+	font-style: normal;
+}
+body.ar #litigation-page .first-post-title {
+	width: 230px;
+}
+body.ar .practice-posts .first-post-title {
+	width: 244px;
+	text-align: right;
+}
+body.ar .team-page .first-post-title {
+	width: 142px;
+}
+body.ar .team-page .royalSlider .rsGCaption {
+	text-align: right;
+}
+body.ar .article-page .first-post-title, body.ar .about-page .first-post-title {
+	width: auto;
+	text-align: center;
+	background-position: bottom center;
+}
+body.ar .site-footer ul li a {
+	width: 65px;
+	padding: 5px 0;
+}
+body.ar form .form-control {
+	text-align: right;
+}
+body.ar form input[type="submit"] {
+	float: left;
+}
+body.ar .testimonial-posts li {
+	text-align: left;
+}
+body.ar .practice-page article.category-ligitation_ar {
+	border-bottom: solid 1px #adadad;
+}
+body.ar .gm-style-iw {
+	left: 0 !important;
+}
+body.ar .banner-caption {
+	width: 60% !important;
+	font-size: 22px;
+	text-align: right;
+}
+body.ar .about .banner-caption, body.ar .article .banner-caption {
+	text-align: left;
+}
+.navbar-default .navbar-collapse {
+	clear: left;
+	padding: 0;
+}
+.navbar-default .navbar-collapse .navbar-nav {
+	margin: 0;
+}
+body.ar .sub-menu-page.practice li a {
+	font-size: 18px;
+}
+
+/*============================= Media Query================================*/
+@media screen and (min-width: 1200px) {
+.container {
+	width: 1000px;
+}
+.navbar-default .navbar-nav>li>a {
+	padding: 10px 15px;
+}
+body.ar .navbar-default .navbar-nav>li>a {
+	width: 110px;
+	text-align: center;
+}
+.home.en .sub-menu-page li a{
+ padding:26px 0;
+}
+
+.home.en .sub-menu-page li:first-child a{
+ padding: 15px;
+}
+
+}
+
+@media screen and (max-width:1199px) and (min-width:480px) {
+ .home.en .sub-menu-page li {
+ width:20%;
+}
+.home.en .sub-menu-page ul {
+ background:#eeedee;
+}
+ .home.en .sub-menu-page li:first-child {
+ width:60%;
+}
+
+}
+@media screen and (max-width: 980px) {
+.navbar-default .navbar-nav>li>a {
+	font-size: 13px;
+	padding: 5px 12px;
+}
+.sub-menu-page li a {
+	font-size: 14px;
+}
+.site-branding {
+	width: 140px;
+}
+.navbar-default {
+	margin-top: 52px;
+	line-height: 30px;
+}
+body.ar .navbar-default .navbar-nav>li>a {
+	width: 83px;
+}
+article .two-column p {
+	-webkit-column-count: inherit;
+	-moz-column-count: inherit;
+	column-count: inherit;
+}
+.home-title {
+	font-size: 14px;
+	line-height: 24px;
+}
+body.page-template .post-title {
+	margin-bottom: 10px;
+}
+.post-title {
+	font-size: 24px;
+	line-height: 30px;
+}
+.entry-content h4 li {
+	margin-bottom: 15px;
+}
+.first-post-title {
+	font-size: 32px;
+	line-height: 45px;
+	margin: 25px 0 35px;
+	padding: 10px 10% 65px;
+}
+#litigation-page .first-post-title, .practice-posts .first-post-title, .team-page .first-post-title {
+	line-height: 50px;
+	margin: 35px auto;
+	width: 260px;
+}
+.practice-posts .first-post-title {
+	width: 320px;
+}
+.team-page .first-post-title {
+	width: 270px;
+}
+.article-page .first-post-title {
+	line-height: 40px;
+	padding: 30px 2% 60px;
+	margin: 10px 0 30px;
+}
+.sub-menu-page {
+	margin-bottom: 10px;
+}
+.first-post-title span:last-child {
+	font-size: 25px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+}
+.navbar-default .navbar-nav > li > a {
+	font-size: 13px;
+}
+.site-branding {
+	width: 140px;
+	margin: 0 auto;
+	float: none;
+}
+.navbar-default .navbar-toggle {
+	background: #FFF;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: #f9f9f9;
+}
+.navbar-collapse {
+	border: solid 1px #adadad;
+}
+.sub-menu-page li a {
+	font-size: 12px;
+	display: block;
+	float: none;
+	width: auto !important;
+}
+.banner-caption {
+	font-size: 18px;
+	width: 50%;
+}
+.post-title {
+	font-size: 26px;
+}
+.read-more {
+	margin-bottom: 15px;
+}
+.entry-content p, .entry-content ul, .testimonial-posts {
+	font-size: 12px;
+	line-height: 20px;
+}
+.odd-post, .even-post {
+	padding: 15px;
+}
+.navbar-default {
+	margin-top: 53px;
+}
+article .two-column p {
+	-webkit-column-count: inherit;
+	-moz-column-count: inherit;
+	column-count: inherit;
+}
+.first-post-title {
+	font-size: 32px;
+	line-height: 45px;
+	padding: 14px 6% 70px;
+}
+.entry-content p, .entry-content ul, .testimonial-posts {
+	font-size: 14px;
+	line-height: 24px;
+}
+.about .banner-caption, .article .banner-caption, .banner-caption {
+	width: 44%;
+	top: 15px;
+	left: 15px;
+}
+.career-page article {
+	padding: 5px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.navbar-header {
+	background: #e2e2e2
+}
+body.ar .navbar-default .navbar-nav>li>a {
+	width: 100% !important;
+}
+body.ar .navbar-nav {
+	float: none !important;
+}
+}
+
+@media screen and (max-width: 640px) {
+.navbar-brand {
+	display: block;
+}
+.navbar-default .navbar-nav>li>a {
+	padding: 7px 16px;
+}
+.navbar-default {
+	margin-top: 10px;
+}
+.navbar-nav {
+	float: none;
+}
+#litigation-page .first-post-title, .team-page .first-post-title, .practice-page .first-post-title, .practice-posts .first-post-title {
+	width: 90%;
+	text-align: left;
+	font-size: 30px;
+}
+.about .banner-caption, .article .banner-caption {
+	width: 60%;
+	left: 10px;
+	top: 10px;
+}
+.first-post-title {
+	font-size: 26px;
+	line-height: 36px;
+	padding: 0 8% 64px;
+}
+body.ar #litigation-page .first-post-title {
+	width: 276px;
+}
+body.ar .practice-posts .first-post-title {
+	width: 190px;
+}
+body.ar .team-page .first-post-title {
+	width: 140px;
+}
+
+.home .sub-menu-page ul {
+ background:#eeedee;
+}
+}
+
+@media screen and (max-width: 480px) {
+#litigation-page .first-post-title, .team-page .first-post-title, .practice-posts .first-post-title {
+	width: 200px;
+	text-align: left;
+	font-size: 30px;
+}
+#litigation-page .first-post-title {
+	width: 250px;
+}
+.practice-posts .first-post-title {
+	width: 250px;
+}
+body.ar #litigation-page .first-post-title {
+	width: 270px;
+}
+body.ar .practice-posts .first-post-title {
+	width: 185px;
+}
+body.ar .team-page .first-post-title {
+	width: 135px;
+}
+.sub-menu-page li, .sub-menu-page.practice li {
+	float: none;
+	display: block;
+	width: 100%;
+}
+.sub-menu-page li:last-child {
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 360px) {
+.banner-caption {
+	top: 5px;
+	right: 5px;
+	width: 60%;
+	font-size: 15px;
+}
+.home-title {
+	padding: 20px 1% 30px;
+}
+.post-title {
+	font-size: 22px;
+}
+.entry-content h4 li {
+	margin-bottom: 15px;
+}
+}
+/**********************************************IE8 FIXES********************************************************/
+.sub-menu-page li:first-child+li+li {
+	width: 34%\9;
+}
+.sub-menu-page.practice li {
+	width: 100% \9;
+}
+.main-content-inner article:first-child, .main-content-inner article:first-child+li+li {
+	border-left: solid 1px #adadad \9;
+	border-top: solid 1px #adadad \9;
+	border-right: 0 \9;
+}
+.main-content-inner article:first-child+li, .main-content-inner article:first-child+li+li+li {
+	border-top: solid 1px #adadad \9;
+	border-right: solid 1px #adadad \9;
+	border-left: 0 \9;
+	border-bottom: 0 \9
+}
